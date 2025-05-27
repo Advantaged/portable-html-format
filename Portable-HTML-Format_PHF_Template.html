@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- PHF Document Structure - Version 17 -->
+<html lang="en">
+<head>
+    <!-- Basic Metadata -->
+    <meta charset="UTF-8">
+    <title>PHF - Portable HTML Format</title>
+    
+    <!-- ================= GOOGLE FONTS ================= -->
+    <!-- Header Font: Orbitron (Bold Tech Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Body Font: Noto Sans (Clean Readability) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ================= STYLE DEFINITIONS ================= -->
+    <style>
+        /* ===== EMOJI SUPPORT ===== */
+        /* Loads color emoji font from CDN */
+        @font-face {
+            font-family: 'Noto Color Emoji';
+            src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+        }
+
+        /* ===== BASE DOCUMENT STYLES ===== */
+        body {
+            margin: 0;
+            background: #000f21; /* Deep navy background */
+            display: flex;
+            justify-content: center; /* Horizontal center */
+            align-items: center; /* Vertical center */
+            min-height: 100vh; /* Full viewport height */
+            padding: 20px; /* Safe area spacing */
+            
+            /* Font Priority List */
+            font-family: 
+                'Noto Sans',      /* Primary text font */
+                Verdana,          /* System fallback */
+                'Noto Color Emoji',  /* Emoji font */
+                'Apple Color Emoji', /* macOS emoji */
+                'Segoe UI Emoji',    /* Windows emoji */
+                sans-serif;       /* Universal fallback */
+        }
+
+        /* ===== HEADING SYSTEM ===== */
+        /* Matches Markdown #/##/### convention */
+        h1 { 
+            font-size: 2em; /* 32px */
+            font-family: 'Orbitron', sans-serif; /* Header font */
+        }
+        h2 { font-size: 1.5em; }  /* 24px (##) */
+        h3 { font-size: 1.25em; } /* 20px (###) */
+        h4 { font-size: 1em; }    /* 16px (####) */
+        h5 { font-size: 0.875em; }/* 14px (#####) */
+        h6 { font-size: 0.75em; } /* 12px (######) */
+        
+        /* Heading Defaults */
+        h1, h2, h3, h4, h5, h6 { 
+            font-weight: 700; /* Bold by default */
+            margin: 1em 0 0.5em; /* Vertical spacing */
+        }
+    </style>
+</head>
+<body>
+    <!-- ================= MAIN CONTAINER ================= -->
+    <!-- Outer wrapper with shadow effect -->
+    <div style="background: #000416; /* Dark container color */
+                padding: 30px 40px; /* Internal spacing */
+                border-radius: 16px; /* Rounded corners */
+                min-width: 600px; /* Minimum width */
+                box-shadow: 0 0 15px rgba(0,255,0,0.1); /* Green glow */
+                display: flex; /* Flex layout */
+                flex-direction: column; /* Vertical stack */
+                gap: 15px;"> <!-- Section spacing -->
+
+        <!-- ================= HEADER SECTION ================= -->
+        <div style="border-bottom: 1px solid #002855; /* Accent line */
+                    padding-bottom: 15px; /* Bottom spacing */
+                    text-align: center;"> <!-- Center alignment -->
+            <!-- Main title with link -->
+            <h1 style="color: #ffd700; /* Gold text */
+                    margin: 0; /* Remove default margin */
+                    font-family: 'Noto Sans', Verdana, sans-serif;"> <!-- Font stack -->
+                <a href="https://github.com/Advantaged/portable-html-format" 
+                   style="color: #00ff00; /* Neon green link */
+                   text-decoration: underline;"> <!-- Always underlined -->
+                    PHF
+                </a> ➡️ Portable-HTML-Format <!-- Text separator -->
+            </h1>
+        </div>
+
+        <!-- ================= CONTENT AREA ================= -->
+        <!-- Editable content section -->
+        <div style="background: #00091b; /* Content background */
+                padding: 25px 30px; /* Text padding */
+                border-radius: 16px; /* Rounded corners */
+                color: #a0c4ff; /* Light blue text */
+                font-family: 'Noto Sans', Verdana, sans-serif;"> <!-- Font stack -->
+            
+            <!-- ================= EXAMPLE CONTENT ================= -->
+            <!-- Demo content showing features -->
+            <h2>Project Documentation <span style="color: #ff71ff;">✨</span></h2>
+            <p>Welcome to the <a href="#phf-guide" style="color: #50b0ff;">PHF Guide</a>!</p>
+
+            <!-- Feature list -->
+            <h3>Core Features</h3>
+            <ul>
+                <li><strong>Full heading hierarchy</strong> (h1-h6)</li>
+                <li>Emoji integration: ✅ 🚀 ⭐</li>
+                <li>Code blocks: <code style="background: #002855; padding: 2px 5px;">sudo pacman -Syu</code></li>
+            </ul>
+
+            <!-- Installation steps -->
+            <h4>Installation Steps</h4>
+            <ol>
+                <li>Download template</li>
+                <li>Edit content area</li>
+                <li>Customize styles</li>
+            </ol>
+
+            <!-- Code example -->
+            <h5>Technical Notes</h5>
+            <p>For advanced users only:</p>
+            <pre style="background: #001933; padding: 15px;">
+<code>function phfInit() {
+    console.log("PHF initialized! 🎉");
+}</code></pre>
+
+            <!-- Version info -->
+            <h6>Version Info</h6>
+            <p>Current version: <strong>1.0.0</strong></p>
+
+            <!-- ================= USER CONTENT AREA ================= -->
+            <!-- 
+                How to use:
+                1. Keep content between these comments
+                2. Use proper heading hierarchy
+                3. Example markup:
+                   <h2>Title</h2>
+                   <p>Text with <a href="#">link</a> and 😊 emoji</p>
+            -->
+        </div>
+
+        <!-- ================= FOOTER SECTION ================= -->
+        <div style="border-top: 1px solid #002855; /* Accent line */
+                    padding-top: 15px; /* Top spacing */
+                    text-align: center;"> <!-- Center alignment -->
+            <!-- Credits -->
+            <p style="color: #ffa500; /* Orange text */
+                    margin: 0; /* Remove margin */
+                    font-size: 0.875em; /* 14px text */
+                    font-family: 'Orbitron', Verdana, sans-serif;"> <!-- Font stack -->
+                Coded by/with <a href="https://chat.deepseek.com/" 
+                   style="color: #32CD32; /* Lime green link */
+                   text-decoration: underline;"> 
+                    DeepSeek
+                </a>, <strong>Enjoy</strong> 🎉 <!-- Call to action -->
+            </p>
+        </div>
+    </div>
+</body>
+</html>

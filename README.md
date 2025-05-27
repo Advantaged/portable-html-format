@@ -21,4 +21,6 @@ the code.
 * But, no more talking, you can see the following picture, which shows exactly what has been programmed in the HTML 
 file:
 
+<img src="2025-05-27_10-27_PHF-Guide.jpg" alt="template" width="100%"/>
 
+✅  **Done** 👍 **& Enjoy**❗️
